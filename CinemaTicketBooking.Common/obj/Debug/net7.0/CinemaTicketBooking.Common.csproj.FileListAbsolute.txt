@@ -1,0 +1,15 @@
+/home/kekfumaster/Documents/workspace/CinemaTicketBooking/CinemaTicketBooking.Common/bin/Debug/net7.0/CinemaTicketBooking.Common.deps.json
+/home/kekfumaster/Documents/workspace/CinemaTicketBooking/CinemaTicketBooking.Common/bin/Debug/net7.0/CinemaTicketBooking.Common.dll
+/home/kekfumaster/Documents/workspace/CinemaTicketBooking/CinemaTicketBooking.Common/bin/Debug/net7.0/CinemaTicketBooking.Common.pdb
+/home/kekfumaster/Documents/workspace/CinemaTicketBooking/CinemaTicketBooking.Common/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
+/home/kekfumaster/Documents/workspace/CinemaTicketBooking/CinemaTicketBooking.Common/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.xml
+/home/kekfumaster/Documents/workspace/CinemaTicketBooking/CinemaTicketBooking.Common/obj/Debug/net7.0/CinemaTicketBooking.Common.csproj.AssemblyReference.cache
+/home/kekfumaster/Documents/workspace/CinemaTicketBooking/CinemaTicketBooking.Common/obj/Debug/net7.0/CinemaTicketBooking.Common.GeneratedMSBuildEditorConfig.editorconfig
+/home/kekfumaster/Documents/workspace/CinemaTicketBooking/CinemaTicketBooking.Common/obj/Debug/net7.0/CinemaTicketBooking.Common.AssemblyInfoInputs.cache
+/home/kekfumaster/Documents/workspace/CinemaTicketBooking/CinemaTicketBooking.Common/obj/Debug/net7.0/CinemaTicketBooking.Common.AssemblyInfo.cs
+/home/kekfumaster/Documents/workspace/CinemaTicketBooking/CinemaTicketBooking.Common/obj/Debug/net7.0/CinemaTicketBooking.Common.csproj.CoreCompileInputs.cache
+/home/kekfumaster/Documents/workspace/CinemaTicketBooking/CinemaTicketBooking.Common/obj/Debug/net7.0/CinemaTicketBooking.Common.csproj.CopyComplete
+/home/kekfumaster/Documents/workspace/CinemaTicketBooking/CinemaTicketBooking.Common/obj/Debug/net7.0/CinemaTicketBooking.Common.dll
+/home/kekfumaster/Documents/workspace/CinemaTicketBooking/CinemaTicketBooking.Common/obj/Debug/net7.0/refint/CinemaTicketBooking.Common.dll
+/home/kekfumaster/Documents/workspace/CinemaTicketBooking/CinemaTicketBooking.Common/obj/Debug/net7.0/CinemaTicketBooking.Common.pdb
+/home/kekfumaster/Documents/workspace/CinemaTicketBooking/CinemaTicketBooking.Common/obj/Debug/net7.0/ref/CinemaTicketBooking.Common.dll

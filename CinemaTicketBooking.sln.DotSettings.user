@@ -1,0 +1,8 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=96ca1fcd_002Dd501_002D4def_002D94a7_002D17d1264b1b9b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetAllAsync_ShouldReturnDtos" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::FAFA711E-BE50-4114-B320-37EAC0C96D6F::net7.0::CinemaTicketBooking.Tests.BaseServiceTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::FAFA711E-BE50-4114-B320-37EAC0C96D6F::net7.0::CinemaTicketBooking.Tests.ReservationServiceTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::FAFA711E-BE50-4114-B320-37EAC0C96D6F::net7.0::CinemaTicketBooking.Tests.ReservationRepositoryTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

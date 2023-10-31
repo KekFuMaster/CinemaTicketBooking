@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "6GHkqkOjWWAr/CDDLACu9Ftnh2UXb1FjOVI9vfJojec=",
+  "Source": "CinemaTicketBooking.Api",
+  "BasePath": "_content/CinemaTicketBooking.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

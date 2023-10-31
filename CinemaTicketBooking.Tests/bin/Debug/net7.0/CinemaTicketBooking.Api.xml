@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CinemaTicketBooking.Api</name>
+    </assembly>
+    <members>
+        <member name="M:CinemaTicketBooking.Api.Controllers.BookingsController.ConfirmBooking(System.Int32)">
+            <summary>
+            Confirms a booking based on a reservation.
+            </summary>
+            <param name="reservationId">The ID of the reservation to confirm.</param>
+            <returns>The details of the newly created booking.</returns>
+            <response code="201">Returns the newly created booking details.</response>
+            <response code="400">If the reservation is not confirmed or is invalid.</response>
+            <response code="404">If the reservation does not exist.</response>
+        </member>
+        <member name="M:CinemaTicketBooking.Api.Controllers.BookingsController.GetBooking(System.Int32)">
+            <summary>
+            Retrieves the details of a specific booking.
+            </summary>
+            <param name="bookingId">The ID of the booking to retrieve.</param>
+            <returns>The details of the specified booking.</returns>
+            <response code="200">Returns the booking details.</response>
+            <response code="404">If the booking does not exist.</response>
+        </member>
+        <member name="M:CinemaTicketBooking.Api.Controllers.MoviesController.GetAllMovies">
+            <summary>
+            Retrieves a list of all movies.
+            </summary>
+            <returns>A list of movie details.</returns>
+            <response code="200">Returns the list of movies.</response>
+        </member>
+        <member name="M:CinemaTicketBooking.Api.Controllers.MoviesController.GetMovie(System.Int32)">
+            <summary>
+            Retrieves the details of a specific movie.
+            </summary>
+            <param name="id">The ID of the movie to retrieve.</param>
+            <returns>The details of the specified movie.</returns>
+            <response code="200">Returns the movie details.</response>
+            <response code="404">If the movie does not exist.</response>
+        </member>
+        <member name="M:CinemaTicketBooking.Api.Controllers.MoviesController.AddMovie(CinemaTicketBooking.Core.Dtos.MovieDto)">
+            <summary>
+            Adds a new movie.
+            </summary>
+            <param name="movieDto">The details of the movie to add.</param>
+            <returns>The details of the newly created movie.</returns>
+            <response code="201">Returns the newly created movie.</response>
+            <response code="400">If the movie has an id greater than 0 or is invalid.</response>
+        </member>
+        <member name="M:CinemaTicketBooking.Api.Controllers.MoviesController.UpdateMovie(CinemaTicketBooking.Core.Dtos.MovieDto)">
+            <summary>
+            Updates an existing movie.
+            </summary>
+            <param name="movieDto">The updated details of the movie.</param>
+            <returns>The details of the updated movie.</returns>
+            <response code="200">Returns the updated movie details.</response>
+            <response code="400">If the movie id is less than or equal to 0 or is invalid.</response>
+            <response code="404">If the movie does not exist.</response>
+        </member>
+        <member name="M:CinemaTicketBooking.Api.Controllers.MoviesController.DeleteMovie(System.Int32)">
+            <summary>
+            Deletes a specific movie.
+            </summary>
+            <param name="id">The ID of the movie to delete.</param>
+            <returns>No content.</returns>
+            <response code="204">If the movie is deleted successfully.</response>
+            <response code="400">If the movie id is less than or equal to 0 or is invalid.</response>
+            <response code="404">If the movie does not exist.</response>
+        </member>
+        <member name="M:CinemaTicketBooking.Api.Controllers.ReservationsController.GetById(System.Int32)">
+            <summary>
+            Retrieves a reservation by its ID.
+            </summary>
+            <param name="id">The ID of the reservation to retrieve.</param>
+            <returns>The reservation details.</returns>
+            <response code="200">Returns the reservation details.</response>
+            <response code="404">If the reservation does not exist.</response>
+        </member>
+        <member name="M:CinemaTicketBooking.Api.Controllers.ReservationsController.GetByShowtime(System.Int32)">
+            <summary>
+            Retrieves all reservations for a specific showtime.
+            </summary>
+            <param name="showtimeId">The ID of the showtime.</param>
+            <returns>A list of reservations.</returns>
+            <response code="200">Returns a list of reservations.</response>
+        </member>
+        <member name="M:CinemaTicketBooking.Api.Controllers.ReservationsController.Create(System.Int32,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Creates a new reservation.
+            </summary>
+            <param name="showtimeId">The ID of the showtime.</param>
+            <param name="seatNumbers">The seat numbers to reserve.</param>
+            <returns>The details of the newly created reservation.</returns>
+            <response code="201">Returns the newly created reservation details.</response>
+            <response code="400">If no seat numbers are provided or if any of the seats are already reserved.</response>
+            <response code="404">If the showtime does not exist.</response>
+        </member>
+        <member name="M:CinemaTicketBooking.Api.Controllers.ReservationsController.Confirm(System.Int32)">
+            <summary>
+            Confirms a reservation.
+            </summary>
+            <param name="reservationId">The ID of the reservation to confirm.</param>
+            <returns>No content.</returns>
+            <response code="204">If the reservation is successfully confirmed.</response>
+            <response code="400">If the reservation could not be confirmed.</response>
+            <response code="404">If the reservation does not exist.</response>
+        </member>
+        <member name="M:CinemaTicketBooking.Api.Controllers.ReservationsController.Cancel(System.Int32)">
+            <summary>
+            Cancels a reservation.
+            </summary>
+            <param name="reservationId">The ID of the reservation to cancel.</param>
+            <returns>No content.</returns>
+            <response code="204">If the reservation is successfully cancelled.</response>
+            <response code="404">If the reservation does not exist or could not be cancelled.</response>
+        </member>
+        <member name="M:CinemaTicketBooking.Api.Controllers.ShowtimesController.GetAll">
+            <summary>
+            Retrieves a list of all showtimes.
+            </summary>
+            <returns>A list of showtime details.</returns>
+            <response code="200">Returns the list of showtimes.</response>
+        </member>
+        <member name="M:CinemaTicketBooking.Api.Controllers.ShowtimesController.Get(System.Int32)">
+            <summary>
+            Retrieves the details of a specific showtime.
+            </summary>
+            <param name="id">The ID of the showtime to retrieve.</param>
+            <returns>The details of the specified showtime.</returns>
+            <response code="200">Returns the showtime details.</response>
+            <response code="404">If the showtime does not exist.</response>
+        </member>
+        <member name="M:CinemaTicketBooking.Api.Controllers.ShowtimesController.Add(CinemaTicketBooking.Core.Entities.ShowtimeDto)">
+            <summary>
+            Adds a new showtime.
+            </summary>
+            <param name="showtimeDto">The details of the showtime to add.</param>
+            <returns>The details of the newly created showtime.</returns>
+            <response code="201">Returns the newly created showtime.</response>
+            <response code="400">If the showtime has an id greater than 0 or is invalid.</response>
+        </member>
+        <member name="M:CinemaTicketBooking.Api.Controllers.ShowtimesController.Update(CinemaTicketBooking.Core.Entities.ShowtimeDto)">
+            <summary>
+            Updates an existing showtime.
+            </summary>
+            <param name="showtimeDto">The updated details of the showtime.</param>
+            <returns>The details of the updated showtime.</returns>
+            <response code="200">Returns the updated showtime details.</response>
+            <response code="400">If the showtime id is less than or equal to 0 or is invalid.</response>
+            <response code="404">If the showtime does not exist.</response>
+        </member>
+        <member name="M:CinemaTicketBooking.Api.Controllers.ShowtimesController.Delete(System.Int32)">
+            <summary>
+            Deletes a specific showtime.
+            </summary>
+            <param name="id">The ID of the showtime to delete.</param>
+            <returns>No content.</returns>
+            <response code="204">If the showtime is deleted successfully.</response>
+            <response code="400">If the showtime id is less than or equal to 0 or is invalid.</response>
+            <response code="404">If the showtime does not exist.</response>
+        </member>
+        <member name="M:CinemaTicketBooking.Api.Controllers.TheatersController.GetAll">
+            <summary>
+            Retrieves a list of all theaters.
+            </summary>
+            <returns>A list of theater details.</returns>
+            <response code="200">Returns the list of theaters.</response>
+        </member>
+        <member name="M:CinemaTicketBooking.Api.Controllers.TheatersController.Get(System.Int32)">
+            <summary>
+            Retrieves the details of a specific theater.
+            </summary>
+            <param name="id">The ID of the theater to retrieve.</param>
+            <returns>The details of the specified theater.</returns>
+            <response code="200">Returns the theater details.</response>
+            <response code="404">If the theater does not exist.</response>
+        </member>
+        <member name="M:CinemaTicketBooking.Api.Controllers.TheatersController.Add(CinemaTicketBooking.Core.Entities.TheaterDto)">
+            <summary>
+            Adds a new theater.
+            </summary>
+            <param name="theaterDto">The details of the theater to add.</param>
+            <returns>The details of the newly created theater.</returns>
+            <response code="201">Returns the newly created theater.</response>
+            <response code="400">If the theater has an id greater than 0 or is invalid.</response>
+        </member>
+        <member name="M:CinemaTicketBooking.Api.Controllers.TheatersController.Update(CinemaTicketBooking.Core.Entities.TheaterDto)">
+            <summary>
+            Updates an existing theater.
+            </summary>
+            <param name="theaterDto">The updated details of the theater.</param>
+            <returns>The details of the updated theater.</returns>
+            <response code="200">Returns the updated theater details.</response>
+            <response code="400">If the theater id is less than or equal to 0 or is invalid.</response>
+            <response code="404">If the theater does not exist.</response>
+        </member>
+        <member name="M:CinemaTicketBooking.Api.Controllers.TheatersController.Delete(System.Int32)">
+            <summary>
+            Deletes a specific theater.
+            </summary>
+            <param name="id">The ID of the theater to delete.</param>
+            <returns>No content.</returns>
+            <response code="204">If the theater is deleted successfully.</response>
+            <response code="400">If the theater id is less than or equal to 0 or is invalid.</response>
+            <response code="404">If the theater does not exist.</response>
+        </member>
+    </members>
+</doc>
